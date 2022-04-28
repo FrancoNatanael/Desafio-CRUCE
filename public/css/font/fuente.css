@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'neuemachina';
+    src: url('blogfonts.com.url');
+    src: url('neuemachina-light.otf');
+    src: url('neuemachina-regular.otf');
+    src: url('neuemachina-ultrabold.otf');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,1320 @@
+@font-face {
+    font-family: neuemachinaRegular;
+    src: url('./font/neuemachina-regular.otf');
+}
+@font-face {
+    font-family: neuemachinaBold;
+    src: url('./font/neuemachina-ultrabold.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    
+}
+header ul{
+    list-style: none;
+    
+}
+header .logo-cruce{
+    width: 34%;
+    max-width: 120px;
+    
+}
+header .nav-header .opciones{
+    display: none;
+}
+header .icono-lupa,.icono-usuario{
+    display: none;
+}
+header .productos-en-carrito{
+    position: absolute;
+    z-index: 2;
+    top: 43px;
+    right: 15px;
+    color: #EC2227;
+    font-weight: bold;
+}
+
+main .envio-gratis{
+    display: flex;
+    justify-content: space-around;
+    background-color: #7D5A94;
+    color: white;
+    padding: 3px;
+    font-size: 12px;
+    
+}
+main .envio-gratis p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+main .que-estas-buscando{
+    text-align: center;
+    margin: 10px 0;
+    position: relative;
+}
+main .que-estas-buscando input{
+    width: 83%;
+    font-size: 17px;
+    padding: 7px;
+    border: solid 2px #F0F0F0;
+    border-radius: 3px;
+}
+main .que-estas-buscando .icono-lupa-busqueda{
+    z-index: 1;
+    position: absolute;
+    left: 33px;
+    top: 10px;
+}
+
+main .informacion-envios-pagos{
+    display: none;
+}
+main .llego-el-invierno{
+    display: none;
+}
+main .llego-el-invierno-mobile{
+    
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-size:35px;
+    
+}
+main h5{
+    font-family: neuemachinaBold;
+}
+
+main .producto-mobile{
+    display: none;
+}
+main .cuatro-productos{
+    display: flex;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main .productos-dos{
+    position: relative;
+    top: 55px;
+}
+main .cuatro-productos section{
+    width: 46%;
+    /*border: solid 1px red;*/
+    margin: auto;
+}
+main .cuatro-productos .img-producto img{
+    /*border: blue solid 1px;*/
+    width: 100%;
+    max-width: 200px;
+    height: 230px;
+    margin: auto;
+    display: block;
+    margin: 0px auto;
+}
+main .carrito-producto{
+    display: none;
+}
+main .descuento-no-visible{
+    display: none;
+}
+
+main .producto{
+    position: relative;
+}
+main .descuento{
+    position: absolute;
+    z-index: 1;
+    width: 50x;
+    bottom: 146px;
+    left: 3px;
+}
+main .porcentaje-descuento{
+    font-family: neuemachinaBold;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    font-size: 14px;
+    left: 24px;
+    bottom: 170px;
+    transform: rotate(-20deg);
+}
+main .funko{
+    color: #7D5A94;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: neuemachinaBold;
+}
+main h4{
+    
+       font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+main .texto-gris{
+    color: #505050;
+    font-size: 15px;
+    margin-bottom: 1px;
+   
+       font-weight: 500;
+}
+main .precio-cuotas{
+  
+    font-size: 18px;
+    
+       font-weight: 900;
+}
+main .precio-final{
+    display: flex;
+    
+}
+main .precio-final p{
+    margin-right: 11px;
+    font-size: 13px;
+}
+main .precio-final .tachado{
+    color:#8C8C8C;
+    text-decoration: line-through;
+}
+main .precio-final .precio-final-rojo{
+    font-weight: bold;
+    color: #EC2227;
+}
+main .boton-ver-coleccion-mobile{
+    text-align: center;
+    background-color: #F26522;
+    margin: 100px auto;
+    padding: 12px;
+    width: 43%;
+    border-radius: 6px;
+    border: solid 2px black;
+    box-shadow: 4px 4px black;
+}
+main .boton-ver-coleccion-mobile a{
+    font-family: neuemachinaBold;
+    text-decoration: none;
+    color: #FFF;
+    display: inline-block;
+    font-size: 18px;
+}
+main .nuestras-marcas .marcas .flechas-nuestras-marcas{
+    display: none;
+}
+
+main .logo-wsp{
+    position: fixed;
+    z-index: 3;
+    right: 5px;
+    top: 80vh;
+}
+
+main .nuestras-marcas{
+    font-family: neuemachinaBold;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    color: #7D5A94;
+    margin-top: -50px;
+    
+}
+main h3{
+    
+        font-family: neuemachinaBold;;
+        
+  
+}
+main .nuestras-marcas .marcas{
+    width: 90%;
+    
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-around;
+}
+main .nuestras-marcas .marcas .imagen-de-marca-no-mobile{
+    display: none;
+}
+main .nuestras-marcas .marcas .imagen-de-marca img{
+    width: 90%;
+    display: block;
+    margin: 2px auto;
+}
+main .nuestras-marcas .marcas .imagen-de-marca{
+    width: 30%;
+    border-radius: 2px;
+    padding: 8px 15px;
+    background-color: white;
+    /*box-shadow: 0px 5px 3px 3px rgba(0, 0, 0, 0.093);*/
+    margin: 0px auto;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 10px 0px;
+}
+
+
+
+main .info-mobile{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto;
+}
+
+main .info-mobile  .item-info-mobile{
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+    position: relative;
+    
+}
+main .info-mobile .item-info-mobile .caja-item{
+    transform: skewX(-30deg);
+    border-right: solid 1px #C8C8C8;
+    z-index: -1;
+    left: 105%;
+    top: 5px;
+    position: relative;
+    height: 40px;
+}
+main .info-mobile  .item-info-mobile .doce-cuotas{
+    font-family: neuemachinaBold;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2px;
+
+}
+main .info-mobile   .item-info-mobile .sin-interes{
+    font-family: neuemachinaBold;
+   font-weight: bold;
+    color: #EC2227;
+    font-size: 15px;
+    
+}
+main .info-mobile .img-flechas img{
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
+    width: 8px;
+}
+main .info-mobile  .img-flechas{
+    /*width: 30px;
+    height: 30px;*/
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    border: solid 1px #C8C8C8;
+    border-radius: 50%;
+}
+
+
+
+main .juguetes-del-dia{
+    margin-top: 30px;
+    position: relative;
+}
+main .juguetes-del-dia h2{
+   font-style: initial;
+    
+    font-size: 42px;
+    color: #F26522;
+    text-align: center;
+}
+main .juguetes-del-dia .video-juguete{
+    width:100%;
+    margin-top: -52px;
+   
+}
+main .juguetes-del-dia .video-juguete img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border: black solid 7px;
+    border-radius: 6%;
+    
+}
+main .juguetes-del-dia  .play img{ 
+    width: 20px;
+}
+main .juguetes-del-dia  .play{
+    position: relative;
+    z-index: 5;
+    left: 42%;
+    top: 14vh;
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.571);
+    
+}
+
+main .juguetes-del-dia article{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .juguetes-del-dia article img, .texto-funko{
+    width: 45%;
+    
+}
+main .juguetes-del-dia article img{
+   max-width: 250px;
+    
+}
+main .juguetes-del-dia article .texto-funko{
+    padding: 10px;
+}
+/**/
+main .juguetes-del-dia article .descuento-destacado{
+    position: absolute;
+    z-index: 2;
+    width: 60px;
+    top: 70%;
+    right: 82%;
+}
+main .juguetes-del-dia article .porcentaje-descuento-destacado{
+    color: white;
+    position: absolute;
+    z-index: 4;
+    top: 77%;
+    right: 84%;
+    transform: rotate(-20deg);
+}
+
+
+main .lo-mas-buscado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 65px auto;
+    
+}
+main .lo-mas-buscado h4{
+
+    font-family: neuemachinaBold;
+    
+
+    font-size: 28px;
+    font-weight: bold;
+    color: #76B043;
+
+}
+main  .precio-tachado-robots, .precio-robots{
+    display: none;
+}
+main .lo-mas-buscado .titulo-lo-mas-buscado, .producto-seccion-mas-buscado{
+    width: 49%;
+    margin-bottom: 22px;
+}
+
+main .lo-mas-buscado article{
+    display: flex;
+}
+main .lo-mas-buscado article img{
+    width: 35%;
+}
+
+
+
+
+
+
+
+
+/*Tiempo limitado*/
+
+main .tiempo-limitado{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 65px auto;
+    
+}
+main .tiempo-limitado .tiempo-limitado-duracion, .producto-seccion-mas-buscado{
+    width: 49%;
+    margin-bottom: 22px;
+   
+}
+
+main .tiempo-limitado .horas-minutos-segundos{
+    display: flex;
+    justify-content: space-around;
+    margin-left:-18px;
+    font-size: 11px;
+}
+main .tiempo-limitado .hora-finalizacion{
+    color: #EC2227;
+    font-weight: bold;
+    font-size: 24px;
+   
+}
+main .tiempo-limitado article{
+    display: flex;
+    
+}
+main .tiempo-limitado article img{
+    width: 35%;
+}
+
+
+main .novedades{
+    width: 95%;
+    margin: auto;
+    
+}
+main .novedades h2{
+    font-family: neuemachinaBold;
+    font-weight: bold;
+    font-size: 31px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+main .novedades a{
+    font-family: neuemachinaRegular;
+    text-decoration: none;
+    color: black;
+    text-align: left;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 17px;
+}
+main .novedades .mochila-novedades, .descuento-novedades, .carrito-novedades{
+    display: none;
+}
+main .novedades .articulos-novedades{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+main .novedades .articulos-novedades .producto-novedades{
+    width: 47%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+main .novedades .articulos-novedades .producto-novedades .funko-novedades{
+    margin-top: 15px;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 150px;
+}
+
+main .novedades .flechas-cuatro-de-doce{
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+    align-items: center;
+}
+main .novedades .flechas-cuatro-de-doce .flechas-novedades-mobile{
+    margin-left: 10px;
+}
+main .novedades .flechas-cuatro-de-doce img{
+    margin-right: 35px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #C8C8C8;
+}
+main .novedades .flechas-cuatro-de-doce p{
+    margin-right: 10px;
+}
+main .cuatro-de-doce{
+    display: none;
+}
+
+main .fotos-jansport{
+    position: relative;
+    
+}
+main .fotos-jansport .banners-jansport .banner-principal{
+    width: 100%;
+}
+main .fotos-jansport .banners-jansport .banner-secundario{
+    width: 50%;
+    z-index: 2;
+    position: relative;
+    bottom: 112px;
+    left: 45vw;
+}
+main .fotos-jansport .precio-final-mochila-banners{
+    font-weight: bold;
+    font-size: 15px;
+}
+main .fotos-jansport .producto-jansport .img-jansport-banners{
+    display: block;
+    margin: 0px auto;
+    
+}
+main .fotos-jansport .producto-jansport{
+   
+    position: relative;
+    z-index: 4;
+    width: 70%;
+    margin-left: 57px;
+    bottom: 146px;
+}
+
+main .flechas-producto-jansport{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -95px;
+    align-items: center;
+}
+main .flechas-producto-jansport p{
+    margin-left: 10px;
+}
+main .flechas-producto-jansport .img-flechas-producto-jansport{
+    margin-right: 10px;
+}
+main .flechas-producto-jansport .img-flechas-producto-jansport img{
+    margin-left: 35px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #C8C8C8;
+}
+main .termina-en{
+    font-family: neuemachinaBold;
+    color: #505050;
+}
+main .hora-finalizacion{
+    font-family: neuemachinaBold;
+    color: #EC2227;
+}
+
+/*SUBIR*/
+.subir{
+    margin: 40px auto;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #FDB913;
+    width: 28%;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 122px 122px 0px 0px;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 95%;
+    margin:auto;
+    
+}
+footer .columna-footer{
+    width: 47%;
+}
+footer .columna-contacto{
+    
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+}
+footer .columna-contacto .contacto-mayoristas{
+    width: 50%;
+    padding: 30px;
+}
+footer .columna-contacto .buscas-ofertas{
+    width: 60%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+footer .columna-contacto .buscas-ofertas p{
+    font-family: neuemachinaBold;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+footer .columna-contacto .buscas-ofertas input{
+   padding: 6px;
+   width: 95%;
+   margin-bottom: 10px;
+   border: solid 2px #F0F0F0;
+   border-radius: 3px;
+}
+footer .columna-contacto .buscas-ofertas button{
+    padding: 6px;
+    background-color: white;
+    border: solid 2px black;
+    width: 53%;
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 3px 3px black;
+    font-family: neuemachinaBold;
+ }
+ footer .columna-contacto .contacto-mayoristas .contacto{
+     font-family: neuemachinaBold;
+     font-size: 18px;
+     font-weight: bold;
+     color: #F26522;
+     margin-top: 10px;
+     margin-bottom: 5px;
+ }
+ footer .columna-contacto .contacto-mayoristas .mayoristas{
+    font-size: 11px;
+    color: #C8C8C8;
+    margin-left: 10px;
+    font-family: neuemachinaRegular;
+   
+}
+footer .redes-preguntas{
+    text-decoration: none;
+    width: 40%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8C8C8C;
+    text-align: center;
+    margin-bottom: 100px;
+    
+}
+footer .redes img{
+    display: block;
+}
+footer .redes{
+    display: flex;
+    padding-left: 30px;
+   margin-right: -18px;
+}
+footer .redes .redes-nombres, .redes-preguntas p{
+    margin-bottom: 20px;
+}
+footer  .redes-preguntas{
+    margin-left: -30px;
+}
+footer .redes .redes-logos{
+    
+    margin-left: 10px;
+}
+footer .redes .redes-logos img{
+    margin-top: -6px;
+    margin-bottom: 22px;
+}
+
+
+footer .imagenes-servicios{
+    margin-top: -46px;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+   
+}
+footer .imagenes-servicios img{
+    width: 15%;
+    padding-right: 20px;
+}
+footer .imagenes-servicios .servicio-con-borde{
+   border-right: solid 2px #F0F0F0;
+}
+footer .grupos-servicios{
+    text-align: center;
+}
+footer .grupo-1{
+    margin-left: 15px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+footer .grupo-1 img{
+    margin-right: 20px;
+    margin-left: 5px;
+}
+footer .grupo-2 img{
+    width: 15%;
+}
+
+
+
+
+
+@media (min-width:1000px){
+
+    header .nav-header{
+        width: 50%;
+    }
+    header .nav-header ul{
+        
+        display: flex;
+        width: 100%;
+    }
+    header .nav-header li{
+        display: inline-block;
+    }
+    header .menu-header ul{
+        display: flex;
+        width: 100%;
+    }
+    header .nav-header .menu-header .opciones{
+        display: inline-block;
+        margin-left: 15px;
+        font-size: 15px;
+        margin-top: -10px;
+    }
+    header .categorias{
+        font-weight: bold;
+        font-family: neuemachinaRegular;
+    }
+    header .header-gris{
+        color: #8C8C8C;
+        font-weight: 500;
+        font-family: neuemachinaRegular;
+    }
+    header .hot-sale{
+        border: solid 2px #EC2227;
+        color: #EC2227;
+        padding: 1px 3px;
+        font-family: neuemachinaRegular;
+    }
+    header .logo-cruce{
+        display: none;
+    }
+    header .iconos-header-derecha .icono-lupa, .icono-usuario{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    header .iconos-header-derecha .icono-lupa{
+        border: solid 1px #C8C8C8;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 50%;
+        margin-bottom: -9px;
+    }
+    header .iconos-header-derecha{
+        margin-right: 10px;
+    }
+    header .productos-en-carrito{
+        top: 34px;
+        font-size: 15px;
+        right: 32px;
+        
+        
+    }
+
+
+    /*MAIN*/
+
+    main .envio-gratis{
+        justify-content: space-between;
+    }
+    main .envio-gratis p, img{
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    main .que-estas-buscando{
+        display: none;
+    }
+    main .informacion-envios-pagos{
+        display: flex;
+        width: 70%;
+        margin: 30px auto;
+        justify-content: space-around;
+       
+        
+    }
+    main .informacion-envios-pagos .info-mobile{
+        margin: 10px 60px 10px 0;
+    }
+    main .item-info-mobile img{
+        width: 10%;
+        margin-right: -6%;
+    }
+    main .item-info-mobile .moto{
+        margin-left: -40px;
+    }
+    main .item-info-mobile .texto-info-mobile .doce-cuotas{
+        font-size: 15px;
+    }
+    main .item-info-mobile .texto-info-mobile .sin-interes, .costo-adicional{
+        font-size: 13px;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        font-style: normal;
+    }
+    main .item-info-mobile .texto-info-mobile .costo-adicional{
+        color: #8C8C8C;
+    }
+    main .llego-el-invierno-mobile{
+        display: none;
+    }
+    
+    main .llego-el-invierno{
+        display: block;
+        width: 40%;
+
+    }
+    main .llego-el-invierno h5{
+        font-family: neuemachinaBold;
+        font-weight:800;
+        font-size: 40px;
+        margin-top: 50px;
+        
+    }
+    main .llego-el-invierno a{
+        text-align: center;
+        background-color: #F26522;
+        margin-top: 20px;
+        padding: 11px;
+        width: 46%;
+        border-radius: 6px;
+        border: solid 2px black;
+        box-shadow: 4px 4px black;
+        text-decoration: none;
+        color: #FFF;
+    }
+    main .llego-el-invierno p{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 19px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    main .final-rojo-mobile{
+        display: none;
+    }
+    main .precio-final .final-normal{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+    main .cuatro-productos{
+        display: block;
+        width: 90%;
+        margin: auto;
+        
+        padding: 10px;
+    }
+    main .cuatro-productos section{
+        width: 100%;
+        margin: auto;
+    }
+    main .productos-uno{
+        display: flex;
+        justify-content: space-around;
+        
+        margin: auto;
+        width: 100%;
+    }
+    main .productos-uno .producto{
+        width: 15%;
+     
+        margin-bottom: 20px;
+    }
+    main .porcentaje-primeros-productos{
+        color: white;
+        bottom: 317px;
+        left: 32px;
+        font-family: neuemachinaBold;
+    }
+    main .descuento{
+        bottom: 290px;
+    }
+
+    main .productos-dos{
+        display: flex;
+        justify-content: space-around;
+        top: 0;
+    }
+    main .productos-dos .producto{
+        width: 15%;
+        
+        
+    }
+    main .producto-mobile{
+        display: block;
+    }
+    main .carrito-producto{
+        display: block;
+        border: solid 2px #76B043;
+        padding: 5px 7px;
+        border-radius: 6px;
+        margin-left: 0;
+        margin-top: 6px;
+    }
+    main .productos-hacia-abajo{
+        margin-top: 90px;
+    }
+    main .boton-ver-coleccion-mobile{
+        display: none;
+    }
+    main .nuestras-marcas{
+        margin: 50px auto;
+        width: 90%;
+        
+    }
+    main .nuestras-marcas h3{
+        text-align: left;
+        font-size: 23px;
+        font-family: neuemachinaBold;
+    }
+    main .nuestras-marcas .marcas .flechas-nuestras-marcas{
+        display: flex;
+        align-self: center;
+        margin-right: 70px;
+        margin-left: -25px;
+    }
+    main .nuestras-marcas .marcas .flechas-nuestras-marcas img{
+        
+       margin-right: 30px;
+       padding: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: solid 1px #C8C8C8;
+    }
+    main .nuestras-marcas .marcas .imagen-de-marca-no-mobile{
+        display: block;
+    }
+    main .nuestras-marcas .marcas .imagen-de-marca{
+        width: 35%;
+        margin-right: 30px;
+    }
+    main .nuestras-marcas .marcas .imagen-de-marca img{
+        width: 100%;
+       
+    }
+    main .info-mobile-no-pc{
+        display: none;
+    }
+
+
+    /*Juguete del dia*/
+    main .juguetes-del-dia{
+        
+        width: 90%;
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main .juguetes-del-dia .play{
+        display: none;
+    }
+    main .juguetes-del-dia h2{
+        font-weight: bold;
+        font-size: 72px;
+        text-align: left;
+    }
+    main .juguetes-del-dia .video-juguete, article{
+        width: 20%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    main .juguetes-del-dia .video-y-juguete-del-dia{
+        display: flex;
+        
+    }
+    main .juguetes-del-dia .video-y-juguete-del-dia .video-juguete{
+        order: 2;
+        width: 80%;
+        
+    }
+    main .juguetes-del-dia .video-y-juguete-del-dia .video-juguete img{
+        height: 101%;
+        position: relative;
+        bottom: 17px;
+    }
+    main .juguetes-del-dia .video-y-juguete-del-dia article{
+        width: 15%;
+        margin-left: 30px;
+    }
+
+    main .juguetes-del-dia article{
+        flex-wrap: wrap;
+    }
+    main .juguetes-del-dia article .texto-funko .funko{
+        font-weight: bold;
+         
+     }
+    main .juguetes-del-dia article .texto-funko{
+       padding: 0;
+       width: 100%;
+     
+        
+    }
+    main .juguetes-del-dia article .img-funko-del-dia{
+        width: 100%;
+       max-width: 250px;
+       display: block;
+       margin: auto;
+       
+        
+    }
+    main .juguetes-del-dia .carrito-producto{
+        width: 26px;
+    }
+    main .juguetes-del-dia article .descuento-destacado{
+        top: 35%;
+        left: 2px;
+
+    }
+    main .juguetes-del-dia article .porcentaje-descuento-destacado{
+        top:40%;
+        left: 29px;
+        font-family: neuemachinaBold;
+    }
+
+    /*lo mas buscado*/
+    main .lo-mas-buscado{
+        flex-wrap: wrap;
+        width: 97%;
+        margin: 120px auto;
+    }
+    main .lo-mas-buscado .titulo-lo-mas-buscado{
+        width: 5%;
+    }
+    main .lo-mas-buscado .titulo-lo-mas-buscado h4{
+        font-size: 18px;    
+        font-family: neuemachinaBold;
+    }
+    main .lo-mas-buscado .producto-seccion-mas-buscado{
+        width: 15%;
+    }
+    main .lo-mas-buscado .producto-seccion-mas-buscado .texto-dino{
+       font-size: 12px;
+    }
+    main .lo-mas-buscado .producto-seccion-mas-buscado .texto-dino .precio-tachado-robots{
+        margin-top: 6px;
+        display: block;
+        font-size: 12px;
+        color: #8C8C8C;
+        text-decoration: line-through;
+    }
+    main .lo-mas-buscado .producto-seccion-mas-buscado .texto-dino .precio-robots{
+        display: block;
+        font-size: 12px;
+        color: #EC2227;
+        font-weight: bold;
+    }
+    main .lo-mas-buscado .producto-seccion-mas-buscado .texto-dino .precio-robots-negro{
+       color: black;
+       font-weight: bold;
+      
+    }
+    main .precio-invisible{
+        visibility: hidden;
+    }
+
+    /*novedades*/
+    main .novedades{
+       width: 94%;
+        
+    }
+    main .novedades .mochila-novedades, .descuento-novedades, .carrito-novedades{
+        display: block;
+    }
+    main .novedades h2{
+        font-family: neuemachinaBold;
+        display: inline-block;
+    }
+    main .novedades a{
+       color: #8C8C8C;
+       font-size: 12px;
+       position: relative;
+       top: 6px;
+       left: 2px;
+       font-family: neuemachinaRegular;
+    }
+    main .novedades .articulos-novedades .producto-novedades{
+       
+        width: 20%;
+    }
+    main .novedades .articulos-novedades .producto-novedades .producto-img-novedades{
+       max-width: 700px;
+       width: 86%;
+        display: block;
+        margin: auto;
+    }
+    main .novedades .articulos-novedades .producto-novedades .descuento-novedades{
+        position: relative;
+        z-index: 3;
+        bottom: 78px;
+        left: 19px;
+    }
+    main .novedades .articulos-novedades .producto-novedades .porcentaje-descuento-novedades{
+        color: white;
+        position: relative;
+        z-index: 4;
+        bottom: 160px;
+        left: 40px;
+        transform: rotate(-20deg);
+        font-family: neuemachinaBold;
+    }
+    main .funko-descuento{
+        margin-top:-75px;
+    }
+
+    main .dos-de-doce-mobile{
+        display: none;
+    }
+
+
+    main .cuatro-de-doce{
+        display: block;
+    }
+
+    /*fotos jansport*/
+    main .fotos-jansport{
+        display: flex;
+        justify-content: space-around;
+        margin: 80px auto;
+        width: 99%;
+       
+    }
+    main .novedades h4{
+        margin-bottom: 15px;
+    }
+    main .fotos-jansport .banners-jansport{
+        width: 70%;
+    }
+
+    main .fotos-jansport .producto-jansport{
+        width: 90%;
+        bottom: 0;
+        margin-left: -5px;
+    }
+    
+    main .flechas-producto-jansport{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -95px;
+        align-items: center;
+    }
+    main .fotos-jansport .banners-jansport .banner-secundario{
+        width: 38%;
+        z-index: 2;
+        position: relative;
+        bottom: 34%;
+        left: 31vw;
+    }
+    main .flechas-producto-jansport{
+        margin-top: 70px;
+        
+    }
+    main .carrito-jansport{
+        margin-top: 33px;
+        margin-left: -106px;
+
+    }
+
+    /*Tiempo limitado*/
+    main .tiempo-limitado{
+        margin-top: -130px;
+    }
+    main .tiempo-limitado .termina-en{
+        color: #505050;
+        font-family: neuemachinaBold;
+    }
+    main .tiempo-limitado .horas-minutos-segundos{
+        margin-left: 0;
+        justify-content: space-between;
+    }
+    main .tiempo-limitado .tiempo-limitado-duracion, .producto-seccion-mas-buscado{
+        width: 8%;
+       text-align: left;
+    }
+    main .tiempo-limitado  .producto-seccion-mas-buscado{
+        width: 17%;
+       
+    }
+    main .tiempo-limitado .hora-finalizacion{
+        font-family: neuemachinaBold;
+        font-size: 18px;
+    }
+
+    main .tiempo-limitado .producto-seccion-mas-buscado .texto-dino{
+       font-size: 12px;
+    }
+    main .tiempo-limitado .producto-seccion-mas-buscado .texto-dino .precio-tachado-robots{
+        margin-top: 6px;
+        display: block;
+        font-size: 12px;
+        color: #8C8C8C;
+        text-decoration: line-through;
+    }
+    main .tiempo-limitado .producto-seccion-mas-buscado .texto-dino .precio-robots{
+        display: block;
+        font-size: 12px;
+        color: #EC2227;
+        font-weight: bold;
+    }
+    main .precio-invisible{
+        visibility: hidden;
+    }
+
+
+
+
+
+    .subir {
+        width: 8%;
+    }
+
+    /*FOOTER*/
+    footer{
+        
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: 50%;
+    }
+    footer .contacto-mayoristas{
+        display: none;
+    }
+    footer .columna-contacto{
+        margin-top: -71px;
+        order: 3;
+       
+    }
+    footer .columna-contacto .buscas-ofertas{
+        padding: 0;
+        width: 100%;
+    }
+    footer .columna-contacto, .columna-footer{
+        width: 20%;
+        position: relative;
+        
+    }
+    footer .redes .redes-nombres, .redes-preguntas p {
+        margin-bottom: 22px;
+    }
+
+    footer .redes{
+        order: 1;
+        left: 17%;
+        
+    }
+    footer .redes .redes-logos {
+        position: relative;
+        z-index: 3;
+        right: 55%;
+    }
+    footer .redes-preguntas{
+        order: 2;
+        right: 3%
+    }
+    footer .imagenes-servicios{
+        display: none;
+    }
+
+
+}

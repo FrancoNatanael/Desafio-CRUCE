@@ -1,0 +1,461 @@
+@font-face {
+    font-family: neuemachinaRegular;
+    src: url('./font/neuemachina-regular.otf');
+}
+@font-face {
+    font-family: neuemachinaBold;
+    src: url('./font/neuemachina-ultrabold.otf');
+}
+*{
+    margin: 0;
+    padding: 0;
+     font-family: 'Inter', sans-serif;
+}
+header .banner-pc{
+    display: none;
+}
+header .filtros-mobile{
+    width: 95%;
+    margin: 20px auto;
+    
+}
+header .filtros-mobile .seccion-actual{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+header .filtros-mobile .seccion-actual .inicio-juguetes{
+    color: #8C8C8C;
+    font-size: 16px;
+    font-weight: normal;
+}
+header .filtros-mobile .seccion-actual .funko-pop{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+header .filtrar{
+    position: relative;
+}
+header .filtros-mobile .filtrar, .ordenar{
+    width: 90%;
+    margin: auto;
+   
+    margin-bottom: 10px;
+}
+header .filtros-mobile .filtrar button{
+    width: 100%;
+    border: solid 2px #8C8C8C;
+    background-color:white;
+    padding: 5px;
+    font-size: 17px;
+    color: black;
+    border-radius: 6px;
+    text-align: left;
+    text-indent: 10%;
+    font-weight: 500;
+}
+header .filtros-mobile .filtrar button:hover{
+    cursor: pointer;
+}
+header .filtros-mobile .filtrar img{
+    position: absolute;
+    z-index: 2;
+}
+header .filtros-mobile .filtrar .icono-de-filtro{
+    color: black;
+    width: 18px;
+    top: 12px;
+    left: 7px;
+}
+header .filtros-mobile .filtrar .flecha-filtrar{
+    top: 11px;
+    right: 10px;
+    width: 10px;
+}
+header .filtros-mobile .filtrar ::placeholder{
+    color: black;
+}
+
+header .filtros-mobile .ordenar select{
+    width: 100%;
+    border: solid 2px #F0F0F0;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 6px;
+}
+
+
+header img{
+    width: 100%;
+    
+    margin-bottom: 50px;
+}
+
+/*MAIN*/
+
+main .filtros{
+    display: none;
+}
+main .listado{
+    width:100%;
+}
+main .listado .producto{
+    width: 97%;
+    margin: auto;
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    border-top: solid 2px #F0F0F0;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+main .listado .ultimo-producto-lista{
+    border-bottom: solid 2px #F0F0F0;
+}
+main .listado .producto .imagen-producto-lista{
+    width: 45%;
+}
+main .listado .producto .texto-funko-listado{
+    width: 50%;
+}
+main .listado .producto .texto-funko-listado .funko-titulo{
+    color: #7D5A94;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+    font-family: neuemachinaBold;
+}
+main .listado .producto .texto-funko-listado h4{
+    color: black;
+    font-size: 14.5px;
+    font-weight: normal;
+    margin: 5px 0;
+   
+}
+main .producto .texto-gris {
+    color: #505050;
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+main .producto .precio-cuotas {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+main .producto  .precio-final {
+    display: flex;
+}
+main .producto .precio-final p {
+    margin-right: 11px;
+    font-size: 13px;
+}
+main .producto .precio-final .tachado {
+    color: #8C8C8C;
+    text-decoration: line-through;
+}
+main .producto .precio-final .precio-final-rojo {
+    font-weight: bold;
+    color: #EC2227;
+}
+main .listado .producto .imagen-descuento-lista{
+    position: absolute;
+    z-index: 2;
+    width: 66px;
+    right: 80%;
+    top: 68%;
+}
+main .listado .producto .porcentaje-descuento-lista{
+    position: absolute;
+    z-index: 3;
+    color: white;
+    right: 81%;
+    top: 76%;
+    transform: rotate(-20deg);
+        font-family: neuemachinaBold;
+}
+
+main .producto .articulo-sin-stock{
+    display: none;
+}
+
+main .carrito-producto-lista{
+    display: none;
+}
+main .descuento-no-mobile{
+    display: none;
+}
+main .porcentaje-descuento-lista-no-mobile{
+    display: none;
+}
+
+
+
+.subir{
+    margin-left: 32%;
+    margin-right: 32%;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    color: black;
+    background-color: #FDB913;
+    width: 28%;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 122px 122px 0px 0px;
+   
+    z-index: 5;
+}
+
+
+/*footer*/
+
+footer .paginado{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 60px auto;
+    
+}
+footer .paginado img{
+    width: 12px;
+    height: 12px;
+    align-self: center;
+    padding: 10px;
+    border: solid 1px  #8C8C8C;
+    border-radius: 50%;
+    
+}
+footer .paginado p{
+   font-family: neuemachinaBold;
+    padding: 5px;
+    color: #8C8C8C;
+    
+}
+footer .paginado .pagina-actual{
+    color: black;
+    border: solid 2px #F26522;
+    width: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+
+
+@media (min-width:1000px){
+
+
+
+    header .banner-mobile{
+        display: none;
+    }
+    header .banner-pc{
+        display: block;
+        width: 85%;
+        margin: 20px auto;
+        
+    }
+    header .filtros-mobile{
+        display: none;
+    }
+
+
+
+    main{
+        width: 95%;
+        margin: 40px auto;
+    }
+    main .filtros{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 30px auto;
+    }
+    main .filtros .seccion-actual, .filtrar-pc, .ordenar-pc{
+       
+        width: 33%;
+        
+    }
+    main .filtros .seccion-actual{
+        
+        display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 20px;
+    
+    }
+    main .filtros .seccion-actual p{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    main .filtros .seccion-actual .inicio-juguetes-pc{
+        color: #8C8C8C;
+        font-size: 13px;
+        font-weight: normal;
+        margin-right: -15%;
+        margin-left: -70px;
+    }
+    main .juguetes{
+        position: relative;
+        right: 3%;
+    }
+    main .filtros .seccion-actual .funko-pop-pc{
+        font-weight: bold;
+        font-size: 13px;
+       position: relative;
+       right: 24%;
+    }
+
+    main .filtrar-pc{
+        text-align: center;
+        
+        
+        
+    }
+    main .filtrar-pc p{
+        display: inline-block;
+        font-size: 13px;
+        font-family: neuemachinaBold;
+        margin-left: -70px;
+    }
+    main .ordenar-pc{
+        
+        text-align: right;
+    }
+    main .ordenar-pc select{
+        color: #505050;
+        border: solid 2px #F0F0F0;
+        padding: 5px;
+        font-size: 14px;
+        border-radius: 3px;
+        width: 45%;
+        align-self: center;
+    }
+
+    main .listado{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    main .listado .producto{
+        width: 28%;
+        display: block;
+        border: none;
+    }
+
+    main .listado .producto .imagen-producto-lista{
+        width: 85%;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    main .listado .producto .texto-funko-listado{
+        width: 85%;
+        margin: 10px auto;
+    }
+
+    main .listado .producto .porcentaje-descuento-lista-no-mobile{
+        display: block;
+    }
+    main .listado .producto .descuento-no-mobile{
+        display: block;
+    }
+    main .listado .producto .imagen-descuento-lista{
+        top: 50%;
+        left: 16%;
+        
+    }
+    main .listado .producto .porcentaje-descuento-lista{
+        color: white;
+        top: 55%;
+        left: 21%;
+        
+    }
+    main .carrito-producto-lista{
+        display: block;
+        border: solid 2px #76B043;
+        padding: 5px 7px;
+        border-radius: 6px;
+        margin-left: 0;
+        margin-top: 6px;
+    }
+    main .listado .producto-sin-stock{
+        margin-top: 0;
+    }
+    main .producto .articulo-sin-stock-cuotas{
+        display: none;
+    }
+    main .producto .articulo-sin-stock-precio{
+        display: none;
+    }
+    main .producto .articulo-sin-stock{
+        display: flex;
+    }
+    main .producto .titulo-sin-stock{
+        color: #EC2227;
+        font-size: 16px;
+        margin-top: -2px;
+
+    }
+    main .producto .articulo-sin-stock a{
+        padding: 7px;
+        width: 40%;
+        font-size: 13px;
+        font-family: neuemachinaBold;
+        color: black;
+        border: solid 2px black;
+        box-shadow: 3px 1px black;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 10px;
+        border-radius: 4px;
+        transition: all 0.5s;
+    }
+
+    main .producto .articulo-sin-stock a:hover{
+        border: solid 2px #7D5A94;
+        box-shadow: 3px 1px #7D5A94;
+        background-color: black;
+        color: white;
+    }
+
+    main .producto .final-rojo-mobile{
+        display: none;
+    }
+    main .producto .precio-final .final-normal{
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+    }
+
+    main .listado .producto .texto-funko-listado h4{
+        font-size: 13px;
+       
+    }
+
+
+
+
+
+    .subir{
+        display: none;
+    }
+
+
+    footer{
+        width: 26%;
+        margin: auto;
+    }
+
+
+
+
+}
