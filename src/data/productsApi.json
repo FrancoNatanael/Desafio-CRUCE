@@ -3,48 +3,72 @@
         "id":1,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":10,
+        "stock":1,
         "image":"/img/productos-list/funko01.png"
     },
     {
         "id":2,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":0,
+        "stock":1,
         "image":"/img/productos-list/funko02.png"
     },
     {
         "id":3,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":0,
+        "stock":0,
         "image":"/img/productos-list/funko03.png"
     },
     {
         "id":4,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":10,
+        "stock":1,
         "image":"/img/productos-list/funko04.png"
     },
     {
         "id":5,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":0,
+        "stock":1,
         "image":"/img/productos-list/funko05.png"
     },
     {
         "id":6,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":0,
+        "stock":1,
         "image":"/img/productos-list/funko06.png"
     },
     {
         "id":7,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":10,
+        "stock":1,
         "image":"/img/productos-list/funko07.png"
     },
     {
         "id":8,
         "name":"Funko POP | Game Of Thrones - Daenerys 25",
         "price":"2.390",
+        "discount":10,
+        "stock":1,
         "image":"/img/productos-list/funko08.png"
+    },
+    {
+        "id":9,
+        "name":"Funko POP | Game Of Thrones - Daenerys 25",
+        "price":"2.390",
+        "discount":0,
+        "stock":1,
+        "image":"/img/productos-list/funko02.png"
     }
 ]
