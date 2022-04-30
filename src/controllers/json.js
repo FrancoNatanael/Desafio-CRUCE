@@ -11,16 +11,26 @@ const modelController = function (name) {
            
         readFile: function () {
             let tableContents = fs.readFileSync(this.tablePath, 'utf-8');
+
             return JSON.parse(tableContents) || [];
-        },
-        
-        writeFile: function (contents) {
-            let tableContents = JSON.stringify(contents, null, ' ');
-            fs.writeFileSync(this.tablePath, tableContents);
-        },
-        
+        },        
         all: function () {
             return this.readFile();
+        },
+        nextId: function () {
+            let rows = this.readFile();
+            let lastRow = rows.pop();
+
+            return lastRow.id ? ++lastRow.id : 1;
+        },
+        create: function (row) {
+            let rows = this.readFile();
+           
+            rows.push(row);
+            
+            this.writeFile(rows);
+            
+            return row.id;
         },
 
 

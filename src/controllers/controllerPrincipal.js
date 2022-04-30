@@ -5,9 +5,21 @@ const productModel = jsonDb('products')
 
 let controllerPrincipal = {
 
-    index: (req,res) =>{
+    home: (req,res) =>{
         let products = productModel.all();
-        res.render('index',{products})
+        res.render('home',{products})
+    },
+    index: (req,res) =>{
+        fetch('http://localhost:3030/api')
+        .then(response => response.json())
+        .then(products => {
+            let productos = products.products;
+            res.render('index',{productos})
+        }
+            
+           
+            )
+        .catch(e => res.send(e))
     },
     list: (req,res) =>{
 
@@ -23,6 +35,9 @@ let controllerPrincipal = {
         .catch(e => res.send(e))
        
         
+    },
+    form:(req,res) =>{
+        res.render('form')
     }
 }
 

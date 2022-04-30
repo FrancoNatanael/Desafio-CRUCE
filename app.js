@@ -21,6 +21,19 @@ const rutas = require('./src/routes/rutas.js')
 const rutasApi = require('./src/routes/api/apiRoutes')
 
 
+
+const methodOverride =  require('method-override');  
+
+
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json())
+
+
+
+
+app.use(methodOverride('_method'));
+
+
 app.listen(port, () => console.log(`Servidor Funcionando! ${port}!`))
 
 app.use('/',rutas)

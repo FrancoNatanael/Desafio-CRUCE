@@ -88,10 +88,8 @@
                 <% let precioFinal = producto.price %>
 
                 <% if (producto.discount > 0) { %>
-                <%  precioFinal = (precioFinal - ((producto.discount*producto.price) / 100)).toFixed(3) %>
-                <%  cuota = (precioFinal/6) %>
-
-                %>
+                <%  precioFinal = (precioFinal - ((producto.discount*producto.price) / 100)).toFixed()%>
+                
                 <% } %> 
 
             <article class="producto">
@@ -103,22 +101,35 @@
                 <img src="img/descuento-10.png" alt="" class="imagen-descuento-lista">
                 <p class="porcentaje-descuento-lista"><%= producto.discount %>%</p>
                 <% } %> 
+
+
                 <div class="texto-funko-listado">
                 <p class="funko-titulo">Funko</p>
                 <h4> <%= producto.name %> </h4>
-                <p class="texto-gris">6 Cuotas s/interés del</p>
-                <% if(producto.discount > 0) { %> 
-                <p class="precio-cuotas">$<%= (precioFinal/6).toFixed(2) %></p>
-                <% } else { %> 
-                    <p class="precio-cuotas"><%=(precioFinal/6).toFixed(2)%></p>
-                <% } %>    
 
+               <% if(!producto.stock == 0) {%> 
+
+                <p class="texto-gris">6 Cuotas s/interés del</p>
+
+               
+                <p class="precio-cuotas">$<%=(precioFinal/6).toFixed(2)%></p>
+
+                <% } %>    
+               
                 <div class="precio-final">
                     <p>Final: </p>
+
+                    <% if(!producto.discount && producto.stock > 0) { %> 
+                        <p class="tachado final-normal">$<%= producto.price %></p>
+                    <% } else if(producto.discount && producto.stock > 0 ){ %>     
+
+                   
                     <p class="tachado">$<%= producto.price %></p>
                     <p class="precio-final-rojo">$<%= precioFinal %></p>
 
-                    <% if (!producto.stock>0) { %>
+                    <% } %> 
+
+                    <% if (!producto.stock > 0) { %>
                         <h5 class="articulo-sin-stock titulo-sin-stock">Artículo sin stock</h5>
                     <% } %>
 
@@ -128,11 +139,14 @@
                     <div class="articulo-sin-stock">
                 
                         <a href="">Ver artículo</a>
-                        </div>
-                        <% } %>
+                    </div>
+                    <% } else { %>
                     
-                <img src="img/cart-green.png" alt="carrito" class="carrito-producto-lista">
+                    <img src="img/cart-green.png" alt="carrito" class="carrito-producto-lista">
+
+                    <% } %>
                 </div>
+
             </article>
             <% }) %>
 

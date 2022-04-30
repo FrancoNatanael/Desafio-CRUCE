@@ -19,12 +19,30 @@ let controllerPrincipal = {
         res.json(respuesta);
 
     },
-    create:(req,res) =>{
-        
-    },
-    delete:(req,res) =>{
+    create: (req,res) => {
+      
+       
+        let product = {
+            id:productModel.nextId(),
+            name:req.body.name,
+            price:req.body.price,
+            discount:0,
+            stock:1,
+            image:req.body.image
+        }
 
-    },
+        
+
+        productModel.create(product)
+
+        return res.json({
+            data:product,
+            status:200
+        })
+
+
+
+    }
     
 }
 

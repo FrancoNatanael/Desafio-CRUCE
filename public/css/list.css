@@ -180,8 +180,30 @@ main .listado .producto .porcentaje-descuento-lista{
 }
 
 main .producto .articulo-sin-stock{
-    display: none;
+    display: block;
 }
+main .producto .titulo-sin-stock{
+    color: #EC2227;
+    font-size: 13px;
+    
+
+}
+main .producto .articulo-sin-stock a{
+    padding: 7px;
+    width: 40%;
+    font-size: 11px;
+    font-family: neuemachinaBold;
+    color: black;
+    border: solid 2px black;
+    box-shadow: 3px 1px black;
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+
 
 main .carrito-producto-lista{
     display: none;
@@ -416,8 +438,10 @@ footer .paginado .pagina-actual{
         text-decoration: none;
         text-align: center;
         margin-top: 10px;
+        margin-bottom: 25px;
         border-radius: 4px;
         transition: all 0.5s;
+        
     }
 
     main .producto .articulo-sin-stock a:hover{
