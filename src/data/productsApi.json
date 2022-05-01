@@ -70,5 +70,29 @@
   "discount": 0,
   "stock": 1,
   "image": "/img/productos-list/funko02.png"
+ },
+ {
+  "id": 10,
+  "name": "Producto de prueba 01",
+  "price": "2800",
+  "discount": 0,
+  "stock": 1,
+  "image": "http://via.placeholder.com/150x150"
+ },
+ {
+  "id": 11,
+  "name": "Producto de prueba 02",
+  "price": "3200",
+  "discount": 0,
+  "stock": 1,
+  "image": "http://via.placeholder.com/150x150"
+ },
+ {
+  "id": 12,
+  "name": "Producto de prueba 03",
+  "price": "5000",
+  "discount": 0,
+  "stock": 1,
+  "image": "http://via.placeholder.com/150x150"
  }
 ]

@@ -12,10 +12,14 @@ const modelController = function (name) {
         readFile: function () {
             let tableContents = fs.readFileSync(this.tablePath, 'utf-8');
 
-            return JSON.parse(tableContents) || [];
+            return JSON.parse(tableContents) || [];  
         },        
         all: function () {
             return this.readFile();
+        },
+        writeFile: function (contents) {
+            let tableContents = JSON.stringify(contents, null, ' ');
+            fs.writeFileSync(this.tablePath, tableContents);
         },
         nextId: function () {
             let rows = this.readFile();
